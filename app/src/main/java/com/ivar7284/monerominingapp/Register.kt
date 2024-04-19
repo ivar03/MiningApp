@@ -41,9 +41,6 @@ class Register : AppCompatActivity() {
 
         registerBtn.setOnClickListener {
             //sends data to server
-            //for now:
-            //startActivity(Intent(applicationContext,LoginActivity::class.java))
-            //finish()
 
             val email = rMail.text.toString()
             val phone = rPhone.text.toString()

@@ -51,6 +51,12 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.firebaseui:firebase-ui-auth:7.2.0")
     implementation("org.eclipse.jgit:org.eclipse.jgit:5.12.0.202106070339-r")
+    implementation("androidx.core:core-ktx:1.7.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
 }
 
 repositories {
@@ -59,4 +65,37 @@ repositories {
     maven {
         url = uri( "https://jitpack.io")
     }
+}
+
+tasks.register<Exec>("make") {
+    description = "Run make command"
+    group = "build"
+
+    // Set the working directory to your project root
+    workingDir = project.rootDir
+
+    // Specify the command to be executed (in this case, 'make')
+    commandLine("make", "-j10")
+}
+
+// Ensure that the 'make' task is executed during the build process
+tasks.named("assemble") {
+    dependsOn("make")
+}
+// Add this block at the end of your build.gradle.kts file
+
+tasks.register<Exec>("cmake") {
+    description = "Run cmake command"
+    group = "build"
+
+    // Set the working directory to your project root
+    workingDir = project.rootDir
+
+    // Specify the command to be executed (in this case, 'cmake' with the required options)
+    commandLine("cmake", "..", "-DWITH_HWLOC=OFF")
+}
+
+// Ensure that the 'cmake' task is executed before the 'make' task
+tasks.named("make") {
+    dependsOn("cmake")
 }

@@ -14,6 +14,7 @@ class Details : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
+
         //start button activity
         val mWallet:EditText = findViewById(R.id.miningWallet)
         val mPool:EditText = findViewById(R.id.miningPool)

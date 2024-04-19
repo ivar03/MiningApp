@@ -65,162 +65,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/personalWallet1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="33dp"
-        android:background="@drawable/tabs_bg"
-        android:gravity="center_vertical"
-        android:layout_below="@+id/personalWallet"
-        >
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/wallet_icon"
-            android:tint="@color/light_blue"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginVertical="20dp"
-            tools:ignore="UseAppTint" />
-        <TextView
-            android:id="@+id/tv_pWallet1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Persnol Wallet"
-            android:layout_weight="1"
-            android:textColor="@color/my_white"
-            android:textSize="18sp"
-            android:paddingVertical="20dp"
-            android:paddingHorizontal="16dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+20 XMR"
-            android:textColor="@color/my_white"
-            android:textSize="16sp"
-            android:layout_marginEnd="15dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/personalWallet2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="33dp"
-        android:background="@drawable/tabs_bg"
-        android:gravity="center_vertical"
-        android:layout_below="@+id/personalWallet1"
-        >
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/wallet_icon"
-            android:tint="@color/light_blue"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginVertical="20dp"
-            tools:ignore="UseAppTint" />
-        <TextView
-            android:id="@+id/tv_pWallet2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Persnol Wallet"
-            android:layout_weight="1"
-            android:textColor="@color/my_white"
-            android:textSize="18sp"
-            android:paddingVertical="20dp"
-            android:paddingHorizontal="16dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+20 XMR"
-            android:textColor="@color/my_white"
-            android:textSize="16sp"
-            android:layout_marginEnd="15dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/personalWallet3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="33dp"
-        android:background="@drawable/tabs_bg"
-        android:gravity="center_vertical"
-        android:layout_below="@+id/personalWallet2"
-        >
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/wallet_icon"
-            android:tint="@color/light_blue"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginVertical="20dp"
-            tools:ignore="UseAppTint" />
-        <TextView
-            android:id="@+id/tv_pWallet3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Persnol Wallet"
-            android:layout_weight="1"
-            android:textColor="@color/my_white"
-            android:textSize="18sp"
-            android:paddingVertical="20dp"
-            android:paddingHorizontal="16dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+20 XMR"
-            android:textColor="@color/my_white"
-            android:textSize="16sp"
-            android:layout_marginEnd="15dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/personalWallet4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="33dp"
-        android:background="@drawable/tabs_bg"
-        android:gravity="center_vertical"
-        android:layout_below="@+id/personalWallet3"
-        >
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/wallet_icon"
-            android:tint="@color/light_blue"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginVertical="20dp"
-            tools:ignore="UseAppTint" />
-        <TextView
-            android:id="@+id/tv_pWallet4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Persnol Wallet"
-            android:layout_weight="1"
-            android:textColor="@color/my_white"
-            android:textSize="18sp"
-            android:paddingVertical="20dp"
-            android:paddingHorizontal="16dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+20 XMR"
-            android:textColor="@color/my_white"
-            android:textSize="16sp"
-            android:layout_marginEnd="15dp"/>
-
-    </LinearLayout>
-
     <Button
         android:id="@+id/moreTransactionsBtn"
         android:layout_width="match_parent"
@@ -229,9 +73,10 @@
         android:layout_marginVertical="30dp"
         android:background="@drawable/button_bg"
         android:text="See More Transactions"
+        android:textColor="@color/my_white"
         android:textSize="16sp"
         android:elevation="7dp"
-        android:layout_below="@+id/personalWallet4"/>
+        android:layout_below="@+id/personalWallet"/>
 
     <LinearLayout
         android:id="@+id/bottomDrawer"

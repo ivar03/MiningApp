@@ -38,9 +38,6 @@ class LoginActivity : AppCompatActivity() {
         val register:TextView = findViewById(R.id.tv_register)
 
         loginBtn.setOnClickListener {
-            //Toast.makeText(applicationContext,"not implemented yet", Toast.LENGTH_SHORT).show()
-            //just for now:
-            //startActivity(Intent(applicationContext,MainActivity::class.java))
 
             val email = eMail.text.toString()
             val password = password.text.toString()

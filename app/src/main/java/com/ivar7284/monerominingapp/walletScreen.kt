@@ -16,8 +16,6 @@ class walletScreen : AppCompatActivity() {
         val profileBtn: LinearLayout = findViewById(R.id.profileBtn)
         val moreTransactions: Button = findViewById(R.id.moreTransactionsBtn)
 
-        //profile-wallet valle loop kr bare mai kuch karna hai
-        //hash-rate ko bhi realtime karna hai
         //wallet screen recycler view
 
 //        val commands = arrayOf(
